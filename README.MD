@@ -2,30 +2,43 @@
 
 Me having a play
 
-- Install ollama for windows
-
-```console
-pip install streamlit PyPDF2 langchain-community langchain pillow PyMuPDF chromadb
-pip install streamlit
-pip install langchain_community
-streamlit run main.py
-```
+Firstly install Ollama for windows, and probably reboot, then create the model
 
 ## To create the AI model
 
 Init only or reset
 
 ```console
-ollama pull codel
-ollama rm fang
+ollama pull llama3.2
+ollama rm pacha
 ```
 
 ```console
-ollama create fang -f Modelfile
+ollama create pacha -f Modelfile
 ```
 
 ## To run the model
 
 ```console
-ollama run fang
+ollama serve pacha
+```
+
+or to run interactively
+
+```console
+ollama run pacha
+```
+
+## Use python to create a chat interface
+
+create a python environment
+
+```console
+python -m venv
+````
+
+```console
+pip install streamlit PyPDF2 langchain-community langchain pillow PyMuPDF chromadb
+
+streamlit run main.py
 ```
