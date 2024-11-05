@@ -20,14 +20,10 @@ ollama create pacha -f Modelfile
 ## To run the model
 
 ```console
-ollama serve pacha
-```
-
-or to run interactively
-
-```console
 ollama run pacha
 ```
+
+You can exit this by typing /bye
 
 ## Use python to create a chat interface
 
