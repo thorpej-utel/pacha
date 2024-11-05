@@ -34,7 +34,7 @@ python -m venv
 ````
 
 ```console
-pip install streamlit PyPDF2 langchain-community langchain pillow PyMuPDF chromadb
+pip install streamlit PyPDF2 langchain-community langchain pillow PyMuPDF chromadb   langchain-ollama ollama
 
 streamlit run main.py
 ```
